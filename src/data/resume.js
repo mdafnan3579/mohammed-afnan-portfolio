@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Mohammed Afnan",
-  title: "Senior Full-Stack Developer",
+  title: "Full-Stack Developer",
   location: "Queens, NY 11370",
   phone: "(934) 218-8324",
   email: "mdafnan3579@gmail.com",
