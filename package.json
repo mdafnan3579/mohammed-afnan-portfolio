@@ -10,7 +10,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "generate:resume": "node scripts/generate-resume.js"
   },
   "dependencies": {
     "framer-motion": "^13.2.0",
@@ -25,6 +26,7 @@
     "@vitejs/plugin-react": "^4.7.0",
     "gh-pages": "^6.3.0",
     "oxlint": "^1.81.0",
+    "pdfkit": "^0.20.2",
     "vite": "^6.4.3"
   }
 }

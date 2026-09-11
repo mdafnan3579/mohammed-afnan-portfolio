@@ -28,7 +28,7 @@ const Contact = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <motion.h2 variants={itemVariants} className="contact-heading">
+        <motion.h2 variants={itemVariants} className="contact-heading section-heading">
           Get In Touch
         </motion.h2>
         <motion.p variants={itemVariants} className="contact-subheading">

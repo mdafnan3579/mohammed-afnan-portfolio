@@ -14,7 +14,6 @@ import {
   Boxes,
   Cable,
   Webhook,
-  CreditCard,
   HardDrive,
   HeartPulse,
   Database,
@@ -29,20 +28,23 @@ import {
   Globe,
   UploadCloud,
   Brain,
-  Sparkles,
   FileSearch,
   MessageSquare,
   Cog,
   Bot,
   PhoneCall,
-  KeyRound,
-  ShieldCheck,
-  UserCheck,
   Lock,
   UsersRound,
   Shield,
 } from "lucide-react";
 import { GithubIcon } from "./BrandIcons";
+import {
+  StripeIcon,
+  Auth0Icon,
+  JwtIcon,
+  ClerkIcon,
+  AnthropicIcon,
+} from "./techBrandIcons";
 
 // Maps each skill string in data/resume.js -> a lucide-react icon component.
 // lucide-react ships no brand/technology logos, so these are generic
@@ -67,7 +69,7 @@ export const skillIcons = {
   Microservices: Boxes,
   WebSocket: Cable,
   Webhooks: Webhook,
-  "Stripe payments": CreditCard,
+  "Stripe payments": StripeIcon,
   "S3/AWS storage": HardDrive,
   "EHR / FHIR / HL7": HeartPulse,
 
@@ -89,7 +91,7 @@ export const skillIcons = {
 
   // AI / ML
   "LLM Integration": Brain,
-  "Anthropic Claude": Sparkles,
+  "Anthropic Claude": AnthropicIcon,
   "RAG (Retrieval-Augmented Generation)": FileSearch,
   "Prompt Engineering": MessageSquare,
   "AI Workflow Automation": Cog,
@@ -97,9 +99,9 @@ export const skillIcons = {
   Twilio: PhoneCall,
 
   // Security
-  JWT: KeyRound,
-  Auth0: ShieldCheck,
-  Clerk: UserCheck,
+  JWT: JwtIcon,
+  Auth0: Auth0Icon,
+  Clerk: ClerkIcon,
   "Session-based Auth": Lock,
   "Role-based Access Control (RBAC)": UsersRound,
 };

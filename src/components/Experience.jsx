@@ -11,7 +11,7 @@ const itemVariants = {
 const Experience = () => {
   return (
     <section id="experience" className="experience">
-      <h2 className="experience-heading">Experience</h2>
+      <h2 className="experience-heading section-heading">Experience</h2>
       <p className="experience-subheading">
         6+ years building production SaaS platforms across healthcare,
         insurance, legal, real estate, and childcare.

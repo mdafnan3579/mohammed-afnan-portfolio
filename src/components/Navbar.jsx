@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileText } from "lucide-react";
 import { personalInfo } from "../data/resume";
 import "../styles/Navbar.css";
 
@@ -11,6 +11,8 @@ const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
+
+const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,6 +54,16 @@ const Navbar = () => {
           ))}
         </ul>
 
+        <a
+          href={resumeHref}
+          target="_blank"
+          rel="noreferrer"
+          className="navbar-resume-btn"
+        >
+          <FileText size={16} aria-hidden="true" />
+          Resume
+        </a>
+
         <button
           type="button"
           className="navbar-toggle"
@@ -79,6 +91,18 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href={resumeHref}
+                target="_blank"
+                rel="noreferrer"
+                onClick={closeMenu}
+                className="navbar-mobile-resume"
+              >
+                <FileText size={16} aria-hidden="true" />
+                Resume
+              </a>
+            </li>
           </motion.ul>
         )}
       </AnimatePresence>

@@ -17,7 +17,7 @@ const cardVariants = {
 const Projects = () => {
   return (
     <section id="projects" className="projects">
-      <h2 className="projects-heading">Projects</h2>
+      <h2 className="projects-heading section-heading">Projects</h2>
       <p className="projects-subheading">
         A sample of SaaS platforms shipped end-to-end, from architecture to
         production.

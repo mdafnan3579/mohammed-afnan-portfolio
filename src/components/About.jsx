@@ -17,7 +17,7 @@ const About = () => {
         viewport={{ once: true, amount: 0.3 }}
         variants={itemVariants}
       >
-        <h2 className="about-heading">About</h2>
+        <h2 className="about-heading section-heading">About</h2>
         <p className="about-text">{professionalSummary}</p>
       </motion.div>
     </section>

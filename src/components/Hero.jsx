@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, FileText, ArrowRight } from "lucide-react";
 import { personalInfo, heroTaglines } from "../data/resume";
 import { useTypewriter } from "../hooks/useTypewriter";
 import { GithubIcon, LinkedinIcon } from "./icons/BrandIcons";
 import "../styles/Hero.css";
+
+const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`;
 
 const container = {
   hidden: { opacity: 0 },
@@ -40,6 +42,22 @@ const Hero = () => {
           <span>{typedTagline}</span>
           <span className="hero-cursor" aria-hidden="true" />
         </motion.p>
+
+        <motion.div variants={item} className="hero-cta-row">
+          <a href="#projects" className="hero-cta-btn hero-cta-primary">
+            View Projects
+            <ArrowRight size={16} aria-hidden="true" />
+          </a>
+          <a
+            href={resumeHref}
+            target="_blank"
+            rel="noreferrer"
+            className="hero-cta-btn hero-cta-ghost"
+          >
+            Resume
+            <FileText size={16} aria-hidden="true" />
+          </a>
+        </motion.div>
 
         <motion.div variants={item} className="hero-socials">
           <a

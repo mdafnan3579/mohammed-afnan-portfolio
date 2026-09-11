@@ -1,5 +1,5 @@
 .about {
-  padding: 96px 24px;
+  padding: 40px 24px;
   text-align: center;
 }
 
@@ -21,7 +21,7 @@
 
 @media (max-width: 1024px) {
   .about {
-    padding: 64px 20px;
+    padding: 28px 20px;
   }
 
   .about-text {
